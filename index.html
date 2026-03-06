@@ -2,81 +2,76 @@
 <html lang="ru">
 <head>
 <meta charset="UTF-8">
-<title>Алексей & Анастасия</title>
+<title>Lesha & Nastya Wedding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
 <style>
 
 body{
 margin:0;
-font-family:Georgia,serif;
-background:#0f1f17;
-color:white;
+font-family:Montserrat;
+background:#faf7f2;
 text-align:center;
+color:#333;
 }
 
 .hero{
 height:100vh;
-background:url("photo.jpg") center/cover no-repeat;
+background-image:url("photo.jpg");
+background-size:cover;
+background-position:center;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
-background-blend-mode:multiply;
-background-color:rgba(0,0,0,0.5);
+color:white;
+text-shadow:0 2px 10px rgba(0,0,0,0.5);
 }
 
-h1{
+.hero h1{
+font-family:"Playfair Display";
 font-size:60px;
 margin:0;
 }
 
-.date{
-font-size:28px;
-margin-top:10px;
-}
-
-.timer{
-margin-top:30px;
-font-size:30px;
+.hero p{
+font-size:24px;
 }
 
 .section{
-padding:80px 20px;
-max-width:900px;
-margin:auto;
+padding:60px 20px;
 }
 
-.timeline{
-text-align:left;
-line-height:1.8;
-font-size:18px;
+.date{
+font-size:40px;
+font-family:"Playfair Display";
 }
 
-.map{
-margin-top:40px;
+.place{
+font-size:24px;
+margin-top:10px;
 }
 
-button{
-background:#5a7f6c;
-border:none;
-padding:15px 40px;
-font-size:18px;
+.button{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#d6bfa7;
 color:white;
-border-radius:10px;
-cursor:pointer;
+text-decoration:none;
+border-radius:25px;
+font-size:18px;
 }
 
-form{
-display:flex;
-flex-direction:column;
-gap:15px;
-max-width:400px;
-margin:auto;
+.button:hover{
+background:#c9ac8e;
 }
 
-select,input{
-padding:10px;
-font-size:16px;
+footer{
+padding:30px;
+font-size:14px;
+color:#777;
 }
 
 </style>
@@ -85,140 +80,22 @@ font-size:16px;
 <body>
 
 <div class="hero">
-<h1>Алексей & Анастасия</h1>
-<div class="date">26 сентября 2026</div>
-<div class="timer" id="timer"></div>
+<h1>Лёша & Настя</h1>
+<p>Приглашаем вас на нашу свадьбу</p>
 </div>
 
 <div class="section">
+<div class="date">14 августа 2026</div>
+<div class="place">Madrid</div>
 
-<h2>Наша история</h2>
-
-<p>
-Мы познакомились в ирландском баре Lions.  
-Тот вечер неожиданно стал началом нашей истории — мы гуляли по ночной Москве, разговаривали и понимали, что встретили очень близкого человека.
-
-Через месяц мы вместе пошли на концерт группы «Звери», и это было одно из самых ярких свиданий.
-
-Совсем скоро мы поняли, что хотим идти по жизни вместе.  
-А позже в нашей семье появился самый главный человек — наш малыш.
-
-Теперь мы будем очень счастливы разделить с вами день нашей свадьбы.
-</p>
-
+<a class="button" href="https://maps.app.goo.gl/TVj3nMyWTYuhN6Yt9" target="_blank">
+Открыть карту
+</a>
 </div>
 
-<div class="section">
-
-<h2>Программа дня</h2>
-
-<div class="timeline">
-
-13:50 — сбор около ЗАГСа (Башня Око, Москва-Сити)<br>
-15:10 — трансфер от ЗАГСа до усадьбы<br>
-17:00 — сбор гостей в усадьбе, фуршет<br>
-17:30 — свадебная регистрация<br>
-18:30 — начало банкета<br>
-23:00 — клубный зал<br>
-
-<br>
-
-27 сентября — баня и бассейн  
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Место проведения</h2>
-
-<p>
-Новая улица, 4  
-деревня Пучково
-</p>
-
-<div class="map">
-
-<iframe
-src="https://www.google.com/maps?q=55.454038,37.267851&output=embed"
-width="100%"
-height="400"
-style="border:0">
-</iframe>
-
-</div>
-
-</div>
-
-<div class="section">
-
-<h2>Dress Code</h2>
-
-<p>
-Нежно-зеленые, пастельные или черные тона
-</p>
-
-</div>
-
-<div class="section">
-
-<h2>Подтвердите участие</h2>
-
-<form>
-
-<input placeholder="Ваше имя">
-
-<select>
-<option>Белое вино</option>
-<option>Красное вино</option>
-<option>Игристое</option>
-<option>Виски</option>
-<option>Джин</option>
-<option>Коньяк</option>
-<option>Водка</option>
-</select>
-
-<select>
-<option>Останусь на второй день</option>
-<option>Не останусь</option>
-</select>
-
-<select>
-<option>Трансфер 20:00 (27 сентября)</option>
-<option>Трансфер 13:00 (28 сентября)</option>
-<option>Свой транспорт</option>
-</select>
-
-<button>Отправить</button>
-
-</form>
-
-</div>
-
-<script>
-
-var weddingDate = new Date("Sep 26, 2026 17:30:00").getTime();
-
-var timer = setInterval(function(){
-
-var now = new Date().getTime();
-var distance = weddingDate - now;
-
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
-var minutes = Math.floor((distance % (1000*60*60))/(1000*60));
-var seconds = Math.floor((distance % (1000*60))/1000);
-
-document.getElementById("timer").innerHTML =
-days+" дней "+
-hours+" часов "+
-minutes+" минут "+
-seconds+" секунд";
-
-},1000);
-
-</script>
+<footer>
+Ждём вас на нашем празднике ❤️
+</footer>
 
 </body>
 </html>
